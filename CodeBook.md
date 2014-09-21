@@ -10,9 +10,8 @@
 
 
 The run_analysis.R script transforms the raw [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [1] (see below at the raw data) into a tidy dataset.
-1. It loads all raw datasets below and merges the training and the test sets to create one data set.
-![sets](https://coursera-forum-screenshots.s3.amazonaws.com/ab/a2776024af11e4a69d5576f8bc8459/Slide2.png )Overview of the raw data sets [2].
 
+1. It loads all raw datasets below and merges the training and the test sets to create one data set. ![sets](https://coursera-forum-screenshots.s3.amazonaws.com/ab/a2776024af11e4a69d5576f8bc8459/Slide2.png )Overview of the raw data sets [2].
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 The feature names are loaded from "features.txt". Specifically it searches for features containing mean() and std(), so features with meanFreq() will be ignored.
 
@@ -81,7 +80,7 @@ The tidy dataset is stored in tidy.txt, created by the run_analysis.R script, wh
 This is a data set with the average of each variable for each activity and each subject of the raw data. It contains 180 observations (30 subjects times the 6 different activities) and 68 variables (the Activity, Subject, and 66 Acceleromter/Gyro Features).
 
 
-Each of the row contains:
+Each of the rows contains:
 ####Activity
 
 The activity can be one of these activities:
